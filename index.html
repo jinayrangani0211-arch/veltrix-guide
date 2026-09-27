@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VELTRIX GUIDE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-mark">V</span>
+            <span>VELTRIX</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#tutorial">Tutorial</a>
+            <a href="#help">Help</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    VELTRIX GUIDE
+                </div>
+
+                <h1>
+                    Welcome to
+                    <span>VELTRIX</span>
+                </h1>
+
+                <p>
+                    Learn how to use your VELTRIX smart door-lock
+                    system and the VELTRIX mobile application.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button id="startTutorial">
+                        Start Tutorial
+                    </button>
+
+                    <button class="secondary-button" id="learnMore">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Lock Visual -->
+            <div class="lock-container">
+
+                <div class="lock-shackle"></div>
+
+                <div class="lock-body">
+
+                    <div class="lock-keyhole"></div>
+
+                </div>
+
+                <div class="lock-glow"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Tutorial Introduction -->
+        <section id="tutorial" class="tutorial-section">
+
+            <div class="section-label">
+                GET STARTED
+            </div>
+
+            <h2>
+                Learn VELTRIX
+            </h2>
+
+            <p>
+                This guide will help you understand how to use
+                the physical VELTRIX system and its mobile application.
+            </p>
+
+
+            <div class="tutorial-cards">
+
+                <!-- Physical Lock -->
+                <div class="tutorial-card">
+
+                    <div class="card-icon">🔐</div>
+
+                    <h3>Physical Lock</h3>
+
+                    <p>
+                        Learn how to use the keypad, LCD,
+                        doors and internal controls.
+                    </p>
+
+                    <button
+                        class="card-button"
+                        data-topic="physical-lock">
+                        Learn
+                    </button>
+
+                </div>
+
+
+                <!-- Mobile App -->
+                <div class="tutorial-card">
+
+                    <div class="card-icon">📱</div>
+
+                    <h3>Mobile App</h3>
+
+                    <p>
+                        Learn how to sign in, control doors,
+                        use security modes and manage settings.
+                    </p>
+
+                    <button
+                        class="card-button"
+                        data-topic="mobile-app">
+                        Learn
+                    </button>
+
+                </div>
+
+
+                <!-- Bluetooth -->
+                <div class="tutorial-card">
+
+                    <div class="card-icon">🔵</div>
+
+                    <h3>Bluetooth</h3>
+
+                    <p>
+                        Understand how your phone communicates
+                        with the VELTRIX system.
+                    </p>
+
+                    <button
+                        class="card-button"
+                        data-topic="bluetooth">
+                        Learn
+                    </button>
+
+                </div>
+
+
+                <!-- Troubleshooting -->
+                <div class="tutorial-card">
+
+                    <div class="card-icon">🛠️</div>
+
+                    <h3>Troubleshooting</h3>
+
+                    <p>
+                        Find solutions to common VELTRIX
+                        problems and connection issues.
+                    </p>
+
+                    <button
+                        class="card-button"
+                        data-topic="troubleshooting">
+                        Learn
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Help Section -->
+        <section id="help" class="help-section">
+
+            <div class="section-heading">
+
+                <span class="section-badge">
+                    VELTRIX SUPPORT
+                </span>
+
+                <h2>
+                    Need Help?
+                </h2>
+
+                <p>
+                    Having a problem with VELTRIX? Our support assistant can help
+                    you troubleshoot common issues with your system.
+                </p>
+
+            </div>
+
+
+            <div class="support-container">
+
+                <div class="support-icon">
+                    🤖
+                </div>
+
+                <div class="support-content">
+
+                    <h3>
+                        VELTRIX Support Assistant
+                    </h3>
+
+                    <p>
+                        Get step-by-step help with your keypad, LCD, doors,
+                        mobile app, Bluetooth, and other VELTRIX features.
+                    </p>
+
+                    <button
+                        id="open-support-btn"
+                        class="primary-button">
+                        Open Support Assistant
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Support Chat -->
+            <div
+                id="support-chat"
+                class="support-chat hidden">
+
+                <div class="chat-header">
+
+                    <div>
+
+                        <strong>
+                            🤖 VELTRIX Support
+                        </strong>
+
+                        <span>
+                            Local Support Assistant
+                        </span>
+
+                    </div>
+
+                    <button
+                        id="close-support-btn"
+                        class="chat-close">
+                        ✕
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="chat-messages"
+                    class="chat-messages">
+
+                    <div class="bot-message">
+
+                        <strong>
+                            VELTRIX Support
+                        </strong>
+
+                        <p>
+                            Hi! 👋 I'm the VELTRIX Support Assistant.
+                            Tell me what problem you're facing and I'll
+                            help you troubleshoot it step by step.
+                        </p>
+
+                    </div>
+
+
+                    <div class="quick-help">
+
+                        <p>
+                            What do you need help with?
+                        </p>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="door">
+                            🔐 Door
+                        </button>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="keypad">
+                            🔢 Keypad
+                        </button>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="lcd">
+                            📺 LCD
+                        </button>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="app">
+                            📱 Mobile App
+                        </button>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="bluetooth">
+                            🔵 Bluetooth
+                        </button>
+
+                        <button
+                            class="quick-help-btn"
+                            data-problem="other">
+                            🛠 Other Problem
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-input-area">
+
+                    <input
+                        type="text"
+                        id="support-input"
+                        placeholder="Describe your problem..."
+                        autocomplete="off">
+
+                    <button
+                        id="send-support-btn"
+                        class="send-button">
+                        ➤
+                    </button>
+
+                </div>
+
+
+                <div class="chat-footer">
+
+                    <button id="clear-chat-btn">
+                        Clear Chat
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            VELTRIX
+        </div>
+
+        <p>
+            Smart. Secure. Dominate.
+        </p>
+
+        <p class="copyright">
+            © 2026 VELTRIX
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
